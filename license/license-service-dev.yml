@@ -1,0 +1,7 @@
+config.env: I am dev Git based
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/ostockdb
+    username: postgres
+    password: postgres

@@ -1,0 +1,20 @@
+config.env: I am default Git based
+
+spring:
+
+  cloud:
+    config:
+      overrideNone: true
+
+  jpa:
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate.ddl-auto: none
+    show-sql: false
+    properties.hibernate.format_sql: true
+    defer-datasource-initialization: true
+
+management:
+  endpoints:
+    web.exposure.include: '*'
+    enabled-by-default: true
